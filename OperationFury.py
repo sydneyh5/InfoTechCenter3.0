@@ -13,9 +13,18 @@ to check the condition and print a specific print line
 import random
 
 #Weather Condition list using the random.choice library
-#to rsndomly choose a condition and storing it in it's brain
+#to randomly choose a condition and storing it in it's brain
 def weather():
     weatherForcast = ["Rain", "Snow", "Sunny", "Cloudy", "Foggy", "Storming", "Icy"]
     weatherCondition = random.choice(weatherForcast)
     return weatherCondition
+
+weatherAlert = weather()
+
+def vehicleResponseSystem():
+    if weatherAlert == "Icy":
+        print("\nVRS has changed your Alarm 30 minutes earlier based on the NWS forcast of",weatherAlert)
+
+
+vehicleResponseSystem()
 
