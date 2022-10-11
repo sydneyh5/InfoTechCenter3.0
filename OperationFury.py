@@ -1,4 +1,12 @@
 
+
+#****************************************************************************************
+#Import Libraries Here
+from time import sleep #We imported the Sleep function from the Time library
+
+import random
+#****************************************************************************************
+
 #Welcome Screen
 #Developer: Sydney Hribar
 #Version: 1.1
@@ -7,9 +15,6 @@
 Our Welcome Screen will start our program letting
 drivers know that the InfoTechCenter OS is loading
 """
-
-#Import Libraries Here
-from time import sleep #We imported the Sleep function from the Time library
 
 #To change the color of the text out put \033[1;32m and change the last number to change
 #The text color
@@ -35,8 +40,7 @@ is picking from a list - using If, elif, and else statements
 to check the condition and print a specific print line
 """
 
-#Import Libraries here
-import random
+
 
 #Weather Condition list using the random.choice library
 #to randomly choose a condition and storing it in it's brain
