@@ -9,6 +9,7 @@ we have until we need gasoline based on an if, elif, else condition
 
 #Import library here
 import random
+from time import sleep
 
 #Gas Level Function
 def gasLevelGauge():
@@ -16,4 +17,13 @@ def gasLevelGauge():
     currentGasLevel = random.choice(gasLevelList)
     return currentGasLevel
 
-gasLevelGauge()
+#Variable calling the gasLevelGauge function to store value once
+gasLevelIndicator = gasLevelGauge()
+
+def gasLevelAlert():
+    if gasLevelIndicator == "Empty":
+        print("\033[1;31m***WARNING YOU ARE ON EMPTY***\033[0m")
+        sleep(1.25)
+        print("Calling Emergency Contact")
+
+gasLevelAlert()
