@@ -26,15 +26,16 @@ def listOfGasStations():
     return gasStationNearby
 
 def gasLevelAlert():
+    milesToGasStation = round(random.uniform(1,25),1)
     if gasLevelIndicator == "Empty":
         print("\033[1;31m***WARNING YOU ARE ON EMPTY***\033[0m")
         sleep(1.25)
-        print("Calling Emergency Contact")
+        print("Calling Emergency Contact.")
     elif gasLevelIndicator == "Low":
         print("\033[1;31m***WARNING***\033[0m")
         sleep(1)
-        print("Your gas level is extremely low, checking google maps for the closest gas station")
+        print("Your gas level is extremely low, checking google maps for the closest gas station.")
         sleep(1)
-        print("The closest gas station is",listOfGasStations())
+        print("The closest gas station is",listOfGasStations(),"which is",milesToGasStation,"miles away.")
 
 gasLevelAlert()
