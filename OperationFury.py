@@ -74,9 +74,6 @@ def vehicleResponseSystem():
         print("\nThe weather today is",weatherAlert)
         print("VRS will allow your car to go 95MPH\n")
 
-
-vehicleResponseSystem()
-
 #****************************************************************************************
 
 #Gasoline
@@ -88,9 +85,6 @@ Define a function to check our gas gauge and determine how far
 we have until we need gasoline based on an if, elif, else condition
 """
 
-#Import library here
-import random
-from time import sleep
 
 #Gas Level Function
 def gasLevelGauge():
@@ -133,5 +127,9 @@ def gasLevelAlert():
         print("\033[1;32mYour gas tank is full, you have plenty of gas to get where you are going.")
 
 
+#****************************************************************************************
 
+#Call functions here...
+print()
 gasLevelAlert()
+vehicleResponseSystem()
